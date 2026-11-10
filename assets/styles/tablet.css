@@ -1,0 +1,50 @@
+@media (max-width: 900px) {
+    :root {
+        --section-padding: 70px;
+    }
+
+    .container {
+        width: min(
+            calc(100% - 40px),
+            var(--container-width)
+        );
+    }
+
+    .main-nav {
+        gap: 25px;
+    }
+
+    .association-card {
+        grid-template-columns: 1fr;
+        padding: 50px 40px;
+        text-align: center;
+    }
+
+    .association-content {
+        max-width: none;
+    }
+
+    .adventures-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .video-placeholder,
+    .carousel-card {
+        min-height: 300px;
+    }
+
+    .join-card {
+        padding: 45px 35px;
+    }
+
+    .join-options {
+        gap: 30px;
+    }
+
+    .footer-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
