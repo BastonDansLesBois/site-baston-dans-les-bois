@@ -48,3 +48,114 @@
     }
 
 }
+
+
+/* ============================================================
+   TABLETTE — 651px à 1024px
+============================================================ */
+
+@media (min-width: 651px) and (max-width: 1024px) {
+
+    /* HERO */
+
+    .hero-section {
+        min-height: auto;
+        padding-inline: 20px;
+    }
+
+    .hero-container {
+        width: 100%;
+        padding-block: 45px;
+    }
+
+    .association-card {
+        max-width: 850px;
+        padding: 55px 45px;
+        gap: 40px;
+    }
+
+    /* LOGO + PRÉSENTATION */
+
+    .association-main {
+        grid-template-columns: 38% 62%;
+        gap: 30px;
+    }
+
+    .association-logo img {
+        width: 100%;
+        max-width: 280px;
+        max-height: 280px;
+    }
+
+    .association-content {
+        max-width: 100%;
+    }
+
+    .association-content h1 {
+        margin-bottom: 20px;
+        font-size: 2.2rem;
+    }
+
+    .association-content p {
+        font-size: 0.95rem;
+        line-height: 1.65;
+    }
+
+    .association-content p + p {
+        margin-top: 15px;
+    }
+
+    /* PRESSE */
+
+    .press-mentions {
+        padding-top: 25px;
+    }
+
+    .press-mentions h2 {
+        font-size: 1.2rem;
+    }
+
+    .press-links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .press-card {
+        padding: 17px;
+    }
+
+    .press-title {
+        font-size: 0.88rem;
+    }
+}
+
+
+/* ============================================================
+   PETITES TABLETTES — 651px à 800px
+============================================================ */
+
+@media (min-width: 651px) and (max-width: 800px) {
+
+    .association-card {
+        padding: 40px 35px;
+        gap: 30px;
+    }
+
+    .association-main {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .association-logo img {
+        max-width: 220px;
+        max-height: 220px;
+    }
+
+    .association-content h1 {
+        text-align: center;
+    }
+
+    .press-links {
+        grid-template-columns: 1fr;
+    }
+}

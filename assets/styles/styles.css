@@ -211,8 +211,9 @@ p {
 }
 
 
+
 /* ============================================================
-   HERO
+   HERO — DESKTOP
 ============================================================ */
 
 .hero-section {
@@ -220,8 +221,7 @@ p {
     min-height: 900px;
     display: flex;
     align-items: center;
-    background-image:
-        url("../images/background.webp");
+    background-image: url("../images/background.webp");
     background-size: cover;
     background-position: center;
 }
@@ -229,8 +229,7 @@ p {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background:
-        rgba(0, 0, 0, 0.08);
+    background: rgba(0, 0, 0, 0.08);
 }
 
 .hero-container {
@@ -239,19 +238,28 @@ p {
     padding-block: 60px;
 }
 
+/* RECTANGLE PRINCIPAL — ANCIENNES RÈGLES CONSERVÉES */
+
 .association-card {
     width: 100%;
     max-width: 1100px;
     margin-inline: auto;
     padding: 70px 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background: white;
+    border-radius: var(--radius-large);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* LOGO ET PRÉSENTATION */
+
+.association-main {
     display: grid;
     grid-template-columns: 42% 58%;
     align-items: center;
     gap: 50px;
-    background:white;
-    border-radius: var(--radius-large);
-    box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.12);
 }
 
 .association-logo {
@@ -276,6 +284,88 @@ p {
 
 .association-content p + p {
     margin-top: 20px;
+}
+
+/* PRESSE */
+
+.press-mentions {
+    width: 100%;
+    padding-top: 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.press-mentions h2 {
+    margin-bottom: 18px;
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+.press-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.press-card {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 18px;
+    border: 1px solid #e5e5e5;
+    border-radius: var(--radius-medium);
+    background: #fff;
+    box-shadow: var(--shadow-soft);
+    text-decoration: none;
+    transition:
+        transform var(--transition-fast),
+        box-shadow var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+.press-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-card);
+}
+
+.press-source {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-grey);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.press-source i {
+    color: var(--color-primary);
+}
+
+.press-title {
+    color: var(--color-black);
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.press-date {
+    color: var(--color-grey);
+    font-size: 0.8rem;
+}
+
+.press-read {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 8px;
+    color: var(--color-primary);
+    font-size: 0.85rem;
+    font-weight: 700;
 }
 
 
@@ -623,7 +713,7 @@ p {
 }
 
 .discord-icon, .helloasso-icon {
-    background: #5865F2;
+    background:var(--color-primary);
     color: var(--color-white);
 }
 
